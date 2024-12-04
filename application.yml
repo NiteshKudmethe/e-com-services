@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/NiteshKudmethe/e-com-services
+          searchPaths: '{application}'  # Optional: defines where the config files are located
+          clone-on-start: true  # Optional: clones the repo at startup
+          default-label: main  # Specify the correct branch name here
+server:
+  port: 8080
